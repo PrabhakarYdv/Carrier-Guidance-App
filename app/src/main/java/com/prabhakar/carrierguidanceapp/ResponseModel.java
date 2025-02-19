@@ -1,100 +1,96 @@
 package com.prabhakar.carrierguidanceapp;
 
-import java.util.ArrayList;
-
 public class ResponseModel {
-    private String uniqueId;
-    private String role;
-    private String collegeName;
-    private double rating;
-    private double cutoff;
-    private String tier;
-    private String address;
 
-    public void setUniqueId(String uniqueId) {
-        this.uniqueId = uniqueId;
-    }
 
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public void setCollegeName(String collegeName) {
-        this.collegeName = collegeName;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public void setCutoff(double cutoff) {
-        this.cutoff = cutoff;
-    }
-
-    public void setTier(String tier) {
-        this.tier = tier;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setSectors(ArrayList<String> sectors) {
-        this.sectors = sectors;
-    }
-
-    public void setAdmissionRequirements(String admissionRequirements) {
-        this.admissionRequirements = admissionRequirements;
-    }
-
-    public void setCollegeDetails(String collegeDetails) {
-        this.collegeDetails = collegeDetails;
-    }
+    String uniqueId;
+    String role;
+    String collegeName;
+    double rating;
+    double cutoff;
+    String tier;
+    String address;
+    Sectors sector;
+    String admissionRequirement;
+    String collegeDetails;
 
     public String getUniqueId() {
         return uniqueId;
+    }
+
+    public void setUniqueId(String uniqueId) {
+        this.uniqueId = uniqueId;
     }
 
     public String getRole() {
         return role;
     }
 
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     public String getCollegeName() {
         return collegeName;
+    }
+
+    public void setCollegeName(String collegeName) {
+        this.collegeName = collegeName;
     }
 
     public double getRating() {
         return rating;
     }
 
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
     public double getCutoff() {
         return cutoff;
+    }
+
+    public void setCutoff(double cutoff) {
+        this.cutoff = cutoff;
     }
 
     public String getTier() {
         return tier;
     }
 
+    public void setTier(String tier) {
+        this.tier = tier;
+    }
+
     public String getAddress() {
         return address;
     }
 
-    public ArrayList<String> getSectors() {
-        return sectors;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getAdmissionRequirements() {
-        return admissionRequirements;
+    public Sectors getSector() {
+        return sector;
+    }
+
+    public void setSector(Sectors sector) {
+        this.sector = sector;
+    }
+
+    public String getAdmissionRequirement() {
+        return admissionRequirement;
+    }
+
+    public void setAdmissionRequirement(String admissionRequirement) {
+        this.admissionRequirement = admissionRequirement;
     }
 
     public String getCollegeDetails() {
         return collegeDetails;
     }
 
-    private ArrayList<String> sectors;
-    private String admissionRequirements;
-    private String collegeDetails;
-
-
-
+    public void setCollegeDetails(String collegeDetails) {
+        this.collegeDetails = collegeDetails;
+    }
 }
