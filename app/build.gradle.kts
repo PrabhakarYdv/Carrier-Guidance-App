@@ -46,4 +46,6 @@ dependencies {
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
+    implementation("com.ramotion.foldingcell:folding-cell:1.2.3")
+
 }
