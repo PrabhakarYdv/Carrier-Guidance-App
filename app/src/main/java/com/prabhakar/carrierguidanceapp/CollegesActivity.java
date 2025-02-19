@@ -56,7 +56,7 @@ public class CollegesActivity extends AppCompatActivity {
             public void onResponse(Call<List<ResponseModel>> call, Response<List<ResponseModel>> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     Log.d("data", response.body().toString());
-                    dataList = (ArrayList<ResponseModel>) response.body();
+                    dataList.addAll(response.body());
                 }
             }
 

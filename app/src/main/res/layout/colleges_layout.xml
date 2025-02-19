@@ -12,13 +12,16 @@
     <com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/folding_cell"
         android:layout_width="match_parent"
+        app:additionalFlipsCount="4"
+        app:animationDuration="2000"
+        app:backSideColor="#250624"
         android:layout_height="wrap_content">
 
         <FrameLayout
             android:id="@+id/cell_content_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <LinearLayout
                 android:layout_width="match_parent"

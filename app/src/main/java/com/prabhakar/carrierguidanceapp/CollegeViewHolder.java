@@ -44,7 +44,7 @@ public class CollegeViewHolder extends RecyclerView.ViewHolder {
         admissionRequirement.setText(model.admissionRequirement);
         collegeDetails.setText(model.collegeDetails);
 
-//        foldingCell.toggle(false);
+        foldingCell.toggle(false);
     }
 
 }
