@@ -9,9 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CollegeRecyclerView extends RecyclerView.Adapter<CollegeViewHolder> {
+public class CollegeAdapter extends RecyclerView.Adapter<CollegeViewHolder> {
 
-    ArrayList<ResponseModel> list;
+    private  ArrayList<ResponseModel> list;
+
+    public CollegeAdapter(ArrayList<ResponseModel> list) {
+        this.list = list;
+    }
 
     @NonNull
     @Override

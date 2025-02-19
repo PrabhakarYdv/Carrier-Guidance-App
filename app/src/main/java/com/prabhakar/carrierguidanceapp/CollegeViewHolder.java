@@ -36,15 +36,15 @@ public class CollegeViewHolder extends RecyclerView.ViewHolder {
         clg.setText(model.collegeName);
         role.setText(model.role);
         college.setText(model.collegeName);
-        rating.setText((int) model.rating);
-        cutoff.setText((int) model.cutoff);
+        rating.setText(String.valueOf( model.rating));
+        cutoff.setText(String.valueOf(model.cutoff));
         tier.setText(model.tier);
         address.setText(model.address);
-        sectors.setText(model.sector.toString());
+//        sectors.setText(model.sector.toString());
         admissionRequirement.setText(model.admissionRequirement);
         collegeDetails.setText(model.collegeDetails);
 
-        foldingCell.toggle(false);
+//        foldingCell.toggle(false);
     }
 
 }
