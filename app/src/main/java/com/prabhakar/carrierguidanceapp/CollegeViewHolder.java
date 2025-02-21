@@ -36,7 +36,7 @@ public class CollegeViewHolder extends RecyclerView.ViewHolder {
         clg.setText(model.collegeName);
         role.setText(model.role);
         college.setText(model.collegeName);
-        rating.setText(String.valueOf( model.rating));
+        rating.setText(String.valueOf(model.rating));
         cutoff.setText(String.valueOf(model.cutoff));
         tier.setText(model.tier);
         address.setText(model.address);
@@ -44,7 +44,11 @@ public class CollegeViewHolder extends RecyclerView.ViewHolder {
         admissionRequirement.setText(model.admissionRequirement);
         collegeDetails.setText(model.collegeDetails);
 
-        foldingCell.toggle(false);
+        foldingCell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                foldingCell.toggle(false);
+            }
+        });
     }
-
 }
