@@ -1,5 +1,7 @@
 package com.prabhakar.carrierguidanceapp;
 
+import java.util.List;
+
 public class ResponseModel {
 
 
@@ -10,9 +12,22 @@ public class ResponseModel {
     double cutoff;
     String tier;
     String address;
-    Sectors sector;
+    List sectors;
     String admissionRequirement;
     String collegeDetails;
+
+    public ResponseModel(String uniqueId, String role, String collegeName, double rating, double cutoff, String tier, String address, List sectors, String admissionRequirement, String collegeDetails) {
+        this.uniqueId = uniqueId;
+        this.role = role;
+        this.collegeName = collegeName;
+        this.rating = rating;
+        this.cutoff = cutoff;
+        this.tier = tier;
+        this.address = address;
+        this.sectors = sectors;
+        this.admissionRequirement = admissionRequirement;
+        this.collegeDetails = collegeDetails;
+    }
 
     public String getUniqueId() {
         return uniqueId;
@@ -70,12 +85,12 @@ public class ResponseModel {
         this.address = address;
     }
 
-    public Sectors getSector() {
-        return sector;
+    public List getSectors() {
+        return sectors;
     }
 
-    public void setSector(Sectors sector) {
-        this.sector = sector;
+    public void setSectors(List sectors) {
+        this.sectors = sectors;
     }
 
     public String getAdmissionRequirement() {

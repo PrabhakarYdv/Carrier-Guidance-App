@@ -32,17 +32,17 @@ public class CollegeViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setData(ResponseModel model) {
-        roleBefore.setText(model.role);
-        clg.setText(model.collegeName);
-        role.setText(model.role);
-        college.setText(model.collegeName);
-        rating.setText(String.valueOf(model.rating));
-        cutoff.setText(String.valueOf(model.cutoff));
-        tier.setText(model.tier);
-        address.setText(model.address);
-//        sectors.setText(model.sector.toString());
-        admissionRequirement.setText(model.admissionRequirement);
-        collegeDetails.setText(model.collegeDetails);
+        roleBefore.setText(model.getRole());
+        clg.setText(model.getCollegeName());
+        role.setText(model.getRole());
+        college.setText(model.getCollegeName());
+        rating.setText(String.valueOf(model.getRating()));
+        cutoff.setText(String.valueOf(model.getCutoff()));
+        tier.setText(model.getTier());
+        address.setText(model.getAddress());
+        sectors.setText(model.getSectors().get(0).toString()+","+model.getSectors().get(1).toString()+","+model.getSectors().get(2));
+        admissionRequirement.setText(model.getAdmissionRequirement());
+        collegeDetails.setText(model.getCollegeDetails());
 
         foldingCell.setOnClickListener(new View.OnClickListener() {
             @Override

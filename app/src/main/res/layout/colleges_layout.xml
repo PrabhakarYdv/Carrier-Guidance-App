@@ -12,12 +12,12 @@
     <com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/folding_cell"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:clipChildren="false"
         android:clipToPadding="false"
         app:additionalFlipsCount="4"
         app:animationDuration="2000"
-        app:backSideColor="#250624"
-        android:layout_height="wrap_content">
+        app:backSideColor="#250624">
 
         <FrameLayout
             android:id="@+id/cell_content_view"
@@ -31,102 +31,67 @@
                 android:orientation="vertical">
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/role"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:weightSum="2">
+                    android:drawableStart="@drawable/profile_icon"
+                    android:drawablePadding="5dp"
+                    android:text="Role"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
 
-
-                    <TextView
-                        android:id="@+id/role"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableStart="@drawable/profile_icon"
-                        android:drawablePadding="5dp"
-                        android:text="Role"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
-
-                    <TextView
-                        android:id="@+id/college"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableStart="@drawable/college_icon"
-                        android:drawablePadding="5dp"
-                        android:text="College"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/college"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:weightSum="2">
+                    android:drawableStart="@drawable/college_icon"
+                    android:drawablePadding="5dp"
+                    android:text="College"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
 
 
-                    <TextView
-                        android:id="@+id/rating"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableStart="@drawable/rating_icon"
-                        android:drawablePadding="5dp"
-                        android:text="4.5"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
-
-                    <TextView
-                        android:id="@+id/cutoff"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableStart="@drawable/cutoff_icon"
-                        android:drawablePadding="5dp"
-                        android:text="9.1"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:weightSum="2">
+                    android:drawableStart="@drawable/rating_icon"
+                    android:drawablePadding="5dp"
+                    android:text="4.5"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/cutoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/cutoff_icon"
+                    android:drawablePadding="5dp"
+                    android:text="9.1"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
 
 
-                    <TextView
-                        android:id="@+id/tier"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableStart="@drawable/tier_icon"
-                        android:drawablePadding="5dp"
-                        android:text="1"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/tier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/tier_icon"
+                    android:drawablePadding="5dp"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
 
-                    <TextView
-                        android:id="@+id/address"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableStart="@drawable/location_icon"
-                        android:drawablePadding="5dp"
-                        android:text="Mumbai India"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
-
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/location_icon"
+                    android:drawablePadding="5dp"
+                    android:text="Mumbai India"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
 
 
                 <TextView
@@ -169,9 +134,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:weightSum="2">
+                android:orientation="vertical"
+                android:padding="10dp">
 
 
                 <TextView
@@ -189,7 +153,7 @@
                     android:id="@+id/clg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
                     android:drawableStart="@drawable/college_icon"
                     android:drawablePadding="5dp"
                     android:text="College"
