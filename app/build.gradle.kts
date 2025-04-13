@@ -1,5 +1,8 @@
 plugins {
     id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
+
 }
 
 android {
@@ -40,12 +43,19 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.google.code.gson:gson:2.10")
+    implementation ("com.google.firebase:firebase-auth:22.1.2")
+    implementation ("com.google.android.gms:play-services-auth:21.0.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+
+//    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+//    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+//    implementation("com.google.code.gson:gson:2.10")
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
     implementation("com.ramotion.foldingcell:folding-cell:1.2.3")
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
 }

@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#3F51B5"
+        android:pathData="M50,0 A50,50 0 1,0 50.01,0 Z"/>
+
+    <!-- Graduation Cap -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,25 L80,40 L50,55 L20,40 Z" />
+
+    <!-- Cap Tassel -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M50,25 L50,65"
+        android:strokeWidth="2"
+        android:strokeColor="#FFEB3B" />
+</vector>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1011690642897",
+    "project_id": "carrier-guidance-app-a62df",
+    "storage_bucket": "carrier-guidance-app-a62df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011690642897:android:38ef7fa66419bd1ea7d4f0",
+        "android_client_info": {
+          "package_name": "com.prabhakar.carrierguidanceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011690642897-1ih20vphs97615mrkbalh6vj89dtl9fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prabhakar.carrierguidanceapp",
+            "certificate_hash": "ca8a5e9e7b12a0eaaff1115c206f180b0fe9a701"
+          }
+        },
+        {
+          "client_id": "1011690642897-lq1qcho5nisd7n5jakqe2hclrkntkg7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ZsYE9r2UY0o_yFo340EloL85ktTvMls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011690642897-lq1qcho5nisd7n5jakqe2hclrkntkg7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
