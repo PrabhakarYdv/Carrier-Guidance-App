@@ -15,12 +15,11 @@ import androidx.fragment.app.Fragment;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.firebase.auth.FirebaseAuth;
 
 
 public class ProfileFragment extends Fragment {
-    private TextView userName,userEmail;
+    private TextView userName, userEmail;
     private ImageView userPhoto;
     private Button logoutButton;
     private FirebaseAuth firebaseAuth;
@@ -41,7 +40,7 @@ public class ProfileFragment extends Fragment {
         // Fetch user info
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(requireContext());
         if (account != null) {
-            userName.setText(account.getDisplayName());
+//            userName.setText(account.getDisplayName());
             userEmail.setText(account.getEmail());
 
             // Load photo using Glide
